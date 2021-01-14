@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    padding : 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-left: solid 70px black;
+    border-right: solid 70px black;
+    background-image: url("./todoimage.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Yusei Magic', sans-serif;
+    overflow: auto;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    /* border-radius: 10px; */
+    border-radius: 10%;
+    border: 10px solid rgba(0, 0, 0, 0.877);
+    background-color:rgba(0, 255, 255, 0.5);
+    flex-wrap: wrap;
+    box-shadow: 10px 15px 20px rgba(3, 3, 3, 0.733);
+}
+title{
+    font: outline;
+}
+button{
+    border:2px solid rgb(3, 122, 151);
+    margin-bottom: 3px;
+    height: 25px;
+    background-color: #03337c;
+    color: #FFF;
+    /* border: 2px solid #0066FF; */
+    font-family: 'Yusei Magic', sans-serif;
+    box-shadow: 5px 10px 15px rgba(3, 121, 151,0.849);
+}
+input{
+    /* border:2px solid rgb(0, 11, 14); */
+    margin-right: 5px;
+    margin-bottom: 3px;
+    padding : 12px;
+    height: 25px;
+    width: 300px;
+    box-shadow: 5px 10px 15px  rgba(128, 128, 128, 0.733);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+ li{
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.692);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    list-style: none;
+    box-shadow: 5px 10px 15px rgba(128, 128, 128, 0.733);
+    
+    
+    
+  }
+   li:hover {
+    background-color: rgba(128, 128, 128, 0.384);
+    cursor: pointer;
+  }
+  ul{
+    padding: 3px;
+  }
+
+    button:hover {
+    background-color: #003399;
+    border: 2px solid #003399;
+    border: solid 2px black;
+    cursor: pointer;
+  }
+  
+  #delete{
+    float: right;
+  }
+  #delete:hover {
+    color: rgb(243, 8, 8);
+  }
